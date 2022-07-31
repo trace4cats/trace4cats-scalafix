@@ -64,7 +64,19 @@ class v0_14 extends SemanticRule("v0_14") {
     ) ++ replacement(s"$oldBasePackage.zipkin", "trace4cats.zipkin") ++ replacement(
       s"$oldBasePackage.kafka",
       "trace4cats.kafka"
-    ) ++ replacement(s"$oldBasePackage.kafka.syntax", "trace4cats.kafka.syntax")
+    ) ++ replacement(s"$oldBasePackage.kafka.syntax", "trace4cats.kafka.syntax") ++ replacement(
+      s"$oldBasePackage.sttp.tapir",
+      "trace4cats.sttp.tapir"
+    ) ++ replacement(
+      s"$oldBasePackage.sttp.tapir.syntax",
+      "trace4cats.sttp.tapir.syntax"
+    ) ++ replacement(
+      s"$oldBasePackage.sttp.client3",
+      "trace4cats.sttp.client3"
+    ) ++ replacement(
+      s"$oldBasePackage.sttp.client3.syntax",
+      "trace4cats.sttp.client3.syntax"
+    )
 
   def replacement(oldPackage: String, newPackage: String): Map[String, (String, Map[String, String])] =
     replacement(Set(oldPackage), newPackage)

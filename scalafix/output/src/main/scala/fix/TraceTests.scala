@@ -43,5 +43,9 @@ import trace4cats.newrelic.NewRelicSpanExporter
 import trace4cats.zipkin.ZipkinHttpSpanCompleter
 import trace4cats.kafka.TracedConsumer
 import trace4cats.kafka.syntax._
+import trace4cats.sttp.tapir.TapirStatusMapping
+import trace4cats.sttp.tapir.syntax._
+import trace4cats.sttp.client3.SttpRequest
+import trace4cats.sttp.client3.syntax._
 
 object TraceTests {}

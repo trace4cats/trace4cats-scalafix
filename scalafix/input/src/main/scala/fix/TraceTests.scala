@@ -47,5 +47,9 @@ import io.janstenpickle.trace4cats.newrelic.NewRelicSpanExporter
 import io.janstenpickle.trace4cats.zipkin.ZipkinHttpSpanCompleter
 import io.janstenpickle.trace4cats.kafka.TracedConsumer
 import io.janstenpickle.trace4cats.kafka.syntax._
+import io.janstenpickle.trace4cats.sttp.tapir.TapirStatusMapping
+import io.janstenpickle.trace4cats.sttp.tapir.syntax._
+import io.janstenpickle.trace4cats.sttp.client3.SttpRequest
+import io.janstenpickle.trace4cats.sttp.client3.syntax._
 
 object TraceTests {}
